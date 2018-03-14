@@ -7,12 +7,42 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Net;
 using UniversalRingApi.Tools;
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("UniversalRingApi.IntegrationTests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100358220b88413526974d2fa2f6907bbfa13c7e421775736918762391813df8ff5f087c20fcc156c502a75a43df9e0aba5d48b895b36444cee2b48bdc1c9bd469323812c4ba24ac4b7ef13eba402ab2f05121c1191a9749cb206e5d2df3afa263ad2aa99f82763df767e6d147ee317fa08d3efce98b74b8f31a1addce0b6c444e8")]
+[assembly: InternalsVisibleTo("UniversalRingApi.UnitTests, PublicKey=002400000480000094000000060200000024000052534131000400000100010005b8f4da35f72b794f7a52b9447a6fa0b57b9145712fc97e2c30fb2105eb39b054fae7ed964f2ca8dbe68a9c981220bc0192e23927b3578cff4981aed5ae8c4440b49ad60727bf23d25ec9e53aac2b7abea0b8c16c3119bfc364b48ce0679cd7620092860e5a54c9a39211a47f3bfbe7036cf80b86f64f25c3b726e22c5c0eea")]
 
 namespace UniversalRingApi
 {
     public class RingCommunications
     {
-        #region Properties
+        #region Internal Properties
+        /// <summary>
+        /// Utilized to support unit test via Moq (mocking).
+        /// A mocked HttpWebRequest can be passed-in
+        /// </summary>
+        internal HttpWebRequest AuthRequest { get; set; }
+
+        /// <summary>
+        /// Utilized to support unit test via Moq (mocking).
+        /// A mocked HttpWebRequest can be passed-into supply the GetRingDevices() response
+        /// </summary>
+        internal HttpWebRequest DevicesRequest { get; set; }
+
+        /// <summary>
+        /// Utilized to support unit test via Moq (mocking).
+        /// A mocked HttpWebRequest can be passed-into supply the GetDoorbotHistory() response
+        /// </summary>
+        internal HttpWebRequest DoorbotHistoryRequest { get; set; }
+
+        /// <summary>
+        /// Utilized to support unit test via Moq (mocking).
+        /// A mocked HttpWebRequest can be passed-into supply the GetDoorbotHistoryRecording() response
+        /// </summary>
+        internal HttpWebRequest DoorbotFileRequest { get; set; }
+        #endregion
+
+        #region Public Properties
 
         /// <summary>
         /// Username to use to connect to the Ring API. Set by providing it in the constructor.
@@ -43,30 +73,6 @@ namespace UniversalRingApi
         /// Authentication Token that will be used to communicate with the Ring API
         /// </summary>
         public string AuthenticationToken { get; private set; }
-
-        /// <summary>
-        /// Utilized to support unit test via Moq (mocking).
-        /// A mocked HttpWebRequest can be passed-in
-        /// </summary>
-        public HttpWebRequest AuthRequest { get; set; }
-
-        /// <summary>
-        /// Utilized to support unit test via Moq (mocking).
-        /// A mocked HttpWebRequest can be passed-into supply the GetRingDevices() response
-        /// </summary>
-        public HttpWebRequest DevicesRequest { get; set; }
-
-        /// <summary>
-        /// Utilized to support unit test via Moq (mocking).
-        /// A mocked HttpWebRequest can be passed-into supply the GetDoorbotHistory() response
-        /// </summary>
-        public HttpWebRequest DoorbotHistoryRequest { get; set; }
-
-        /// <summary>
-        /// Utilized to support unit test via Moq (mocking).
-        /// A mocked HttpWebRequest can be passed-into supply the GetDoorbotHistoryRecording() response
-        /// </summary>
-        public HttpWebRequest DoorbotFileRequest { get; set; }
         #endregion                                                               
 
         #region Fields
