@@ -1,0 +1,310 @@
+﻿{
+  "doorbots": [
+    {
+      "id": 1234567,
+      "description": "Front Door",
+      "device_id": "abcd398e1234",
+      "time_zone": "America/Los_Angeles",
+      "subscribed": true,
+      "subscribed_motions": true,
+      "battery_life": "60",
+      "external_connection": false,
+      "firmware_version": "Up to Date",
+      "kind": "doorbell_v4",
+      "latitude": 48.127132,
+      "longitude": -122.930832,
+      "address": "12345 122th Ave SE, Seattle, WA 98101, USA",
+      "settings": {
+        "enable_vod": 1,
+        "exposure_control": 2,
+        "motion_zones": [ 1, 1, 1, 1, 1 ],
+        "motion_snooze_preset_profile": "none",
+        "motion_snooze_presets": [ "none", "low", "medium", "high" ],
+        "live_view_preset_profile": "middle",
+        "live_view_presets": [ "low", "middle", "high", "highest" ],
+        "pir_sensitivity_1": 5,
+        "vod_suspended": 0,
+        "doorbell_volume": 8,
+        "vod_status": "enabled"
+      },
+      "features": {
+        "motions_enabled": true,
+        "show_recordings": true,
+        "show_vod_settings": true
+      },
+      "owned": true,
+      "alerts": {
+        "connection": "online",
+        "rssi": "low"
+      },
+      "motion_snooze": null,
+      "stolen": false,
+      "location_id": null,
+      "ring_id": null,
+      "owner": {
+        "id": 2745622,
+        "first_name": "Firstname",
+        "last_name": "Lastname",
+        "email": "someone@gmail.com"
+      }
+    }
+  ],
+  "authorized_doorbots": [],
+  "chimes": [
+    {
+      "id": 5655444,
+      "description": "Downstairs",
+      "device_id": "abcd398e4321",
+      "time_zone": "America/Los_Angeles",
+      "firmware_version": "Up to Date",
+      "kind": "chime_pro",
+      "latitude": 48.127132,
+      "longitude": -122.930832,
+      "address": "12345 122th Ave SE, Seattle, WA 98101, USA",
+      "settings": {
+        "volume": 8,
+        "ding_audio_user_id": "ring",
+        "ding_audio_id": null,
+        "motion_audio_user_id": "ring",
+        "motion_audio_id": null
+      },
+      "features": { "ringtones_enabled": true },
+      "owned": true,
+      "alerts": { "connection": "online" },
+      "do_not_disturb": { "seconds_left": 0 },
+      "stolen": false,
+      "location_id": null,
+      "ring_id": null,
+      "owner": {
+        "id": 4567890,
+        "first_name": "Firstname",
+        "last_name": "Lastname",
+        "email": "someone@gmail.com"
+      }
+    }
+  ],
+  "stickup_cams": [
+    {
+      "id": 5544321,
+      "description": "Front",
+      "device_id": "4444d8fb3322",
+      "time_zone": "America/Los_Angeles",
+      "subscribed": true,
+      "subscribed_motions": true,
+      "battery_life": 100,
+      "external_connection": false,
+      "firmware_version": "Up to Date",
+      "kind": "hp_cam_v1",
+      "latitude": 48.127132,
+      "longitude": -122.930832,
+      "address": "12345 122th Ave SE, Seattle, WA 98101, USA",
+      "settings": {
+        "enable_vod": true,
+        "motion_zones": {
+          "enable_audio": false,
+          "active_motion_filter": 2,
+          "sensitivity": 5,
+          "advanced_object_settings": {
+            "human_detection_confidence": {
+              "day": 0.9,
+              "night": 0.9
+            },
+            "motion_zone_overlap": {
+              "day": 0.4,
+              "night": 0.5
+            },
+            "object_time_overlap": {
+              "day": 1.0,
+              "night": 2.0
+            },
+            "object_size_minimum": {
+              "day": 0.01,
+              "night": 0.01
+            },
+            "object_size_maximum": {
+              "day": 0.5,
+              "night": 0.5
+            }
+          },
+          "zone1": {
+            "name": "Zone 1",
+            "state": 2,
+            "vertex1": {
+              "x": 0.21436995,
+              "y": 0.31125888
+            },
+            "vertex2": {
+              "x": 0.5,
+              "y": 0.25
+            },
+            "vertex3": {
+              "x": 0.787091,
+              "y": 0.3895598
+            },
+            "vertex4": {
+              "x": 0.8946914,
+              "y": 0.60535514
+            },
+            "vertex5": {
+              "x": 0.9167389,
+              "y": 0.98038
+            },
+            "vertex6": {
+              "x": 0.5156645,
+              "y": 0.97292286
+            },
+            "vertex7": {
+              "x": 0.22292879,
+              "y": 0.9850001
+            },
+            "vertex8": {
+              "x": 0.08326107,
+              "y": 0.5323354
+            }
+          },
+          "zone2": {
+            "name": "undefined",
+            "state": 0,
+            "vertex1": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex2": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex3": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex4": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex5": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex6": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex7": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex8": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          },
+          "zone3": {
+            "name": "undefined",
+            "state": 0,
+            "vertex1": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex2": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex3": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex4": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex5": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex6": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex7": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "vertex8": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          },
+          "pir_settings": {
+            "sensitivity1": 10,
+            "sensitivity2": 10,
+            "sensitivity3": 10,
+            "zone_mask": 7
+          }
+        },
+        "motion_snooze_preset_profile": "low",
+        "live_view_preset_profile": "highest",
+        "live_view_presets": [ "low", "middle", "high", "highest" ],
+        "motion_snooze_presets": [ "none", "low", "medium", "high" ],
+        "doorbell_volume": 11,
+        "chime_settings": {
+          "type": 0,
+          "enable": true,
+          "duration": 10
+        },
+        "video_settings": {
+          "birton": null,
+          "brightness": 0,
+          "contrast": 64,
+          "saturation": 80,
+          "ae_level": 0
+        },
+        "motion_announcement": false,
+        "stream_setting": 0,
+        "pir_settings": {
+          "sensitivity1": 10,
+          "sensitivity2": 10,
+          "sensitivity3": 10,
+          "zone_mask": 7
+        },
+        "pir_motion_zones": [ 1, 1, 1 ],
+        "floodlight_settings": {
+          "priority": 0,
+          "duration": 30
+        },
+        "light_schedule_settings": {
+          "start_hour": 0,
+          "start_minute": 0,
+          "end_hour": 0,
+          "end_minute": 0
+        }
+      },
+      "features": {
+        "motions_enabled": true,
+        "show_recordings": true,
+        "advanced_motion_enabled": false,
+        "people_only_enabled": false,
+        "shadow_correction_enabled": false,
+        "motion_message_enabled": false,
+        "night_vision_enabled": false
+      },
+      "owned": true,
+      "alerts": { "connection": "online" },
+      "motion_snooze": null,
+      "stolen": false,
+      "location_id": null,
+      "ring_id": null,
+      "led_status": "off",
+      "night_mode_status": "false",
+      "ring_cam_light_installed": "false",
+      "ring_cam_setup_flow": "floodlight",
+      "siren_status": { "seconds_remaining": 0 },
+      "owner": {
+        "id": 7777975,
+        "first_name": "Firstname",
+        "last_name": "lastname",
+        "email": "someone@gmail.com"
+      }
+    }
+  ],
+  "base_stations": []
+}

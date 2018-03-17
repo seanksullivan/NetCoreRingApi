@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversalRingApi.UnitTests"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversalRingApi.IntegrationTests", "UniversalRingApi.IntegrationTests\UniversalRingApi.IntegrationTests.csproj", "{25632954-9383-47CC-A0DB-665EE847F7D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversalRingApi.NUnitTests", "UniversalRingApi.NUnitTests\UniversalRingApi.NUnitTests.csproj", "{2F542B0C-51DB-4012-8DCA-18B8AB1A7939}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{25632954-9383-47CC-A0DB-665EE847F7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25632954-9383-47CC-A0DB-665EE847F7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25632954-9383-47CC-A0DB-665EE847F7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F542B0C-51DB-4012-8DCA-18B8AB1A7939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F542B0C-51DB-4012-8DCA-18B8AB1A7939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F542B0C-51DB-4012-8DCA-18B8AB1A7939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F542B0C-51DB-4012-8DCA-18B8AB1A7939}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{04628E99-CABE-4DBC-9738-E71D62962AFA} = {9994777B-1DB8-47FD-80C8-5E7A8EC5C16D}
 		{25632954-9383-47CC-A0DB-665EE847F7D5} = {9994777B-1DB8-47FD-80C8-5E7A8EC5C16D}
+		{2F542B0C-51DB-4012-8DCA-18B8AB1A7939} = {9994777B-1DB8-47FD-80C8-5E7A8EC5C16D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6154582D-7190-48AF-A5B1-8B01B589DD4B}
